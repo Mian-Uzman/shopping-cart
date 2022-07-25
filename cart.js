@@ -1,11 +1,13 @@
+let productsInCart = 0;
+let totalAmount = 0;
+
+
 const cartProductCounter = document.querySelector('#counter');
 const productList = document.querySelector('#productList');
 const productListInCart = document.querySelector('#productListInCart');
 const totalPrice = document.querySelector('#totalPrice');
 
 
-let productsInCart = 0;
-let totalAmount = 0;
 
 if (productList) {
     productList.addEventListener('click', e => {
@@ -28,7 +30,7 @@ const addProductToCart = (product_name, product_price, product_image) => {
 
     totalAmount += parseInt(product_price.replace('$', '').trim());
     totalPrice.innerText = `Total Amount = ${totalAmount}$`;
-    console.log(totalAmount)
+    // console.log(totalAmount)
     const product = document.createElement('li');
     product.className = 'd-flex justify-content-between align-items-center my-3';
     product.innerHTML = `
