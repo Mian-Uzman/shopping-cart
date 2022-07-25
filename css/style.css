@@ -1,0 +1,16 @@
+i.bi-trash-fill {
+    cursor: pointer;
+}
+
+#totalPrice {
+    /* background-color: rebeccapurple; */
+    padding: 1rem 0rem;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-title {
+
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #eee;
+}
